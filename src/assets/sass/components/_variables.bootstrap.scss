@@ -1,0 +1,19 @@
+// Bootstrap theme colors
+$theme-colors: (
+	"white":      $white,  // custom color type
+	"primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+) !default;
+
+// Dark colors
+$dark:          									$gray-900 !default;
+$dark-75:          									$gray-800 !default; // Custom variable
+$dark-65:          									$gray-700 !default; // Custom variable
+$dark-50:          									$gray-600 !default; // Custom variable
+$dark-25:          									$gray-400 !default; // Custom variable

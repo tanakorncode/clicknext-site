@@ -1,0 +1,45 @@
+// Loader
+$loader-config: (
+	size: 1.4rem,
+	width: 2px,
+	size-sm: 1rem,
+	width-sm: 1px,
+	size-lg: 2rem,
+	width-lg: 3px
+) !default;
+// Spinner
+$spinner-config: (
+	size: 	1.5rem,
+	size-sm: 1.25rem,
+	size-lg: 2rem
+) !default;
+
+$ki-types: (
+	arrowDown: 	'\f109',
+	arrowUp: 	'\f10e',
+	arrowBack: 	'\f106',
+	arrowNext: 	'\f105',
+	boldClose: 	'\f113',
+	close: 		'\f130',
+	plus: 		'\f10d',
+	minus: 		'\f10a',
+	check: 		'\f108',
+	hide: 		'\f115',
+	code: 		'\f116',
+	copy: 		'\f117'
+) !default;
+
+// Burger Icon
+$burger-icon-config: (
+    width: 24px,
+    height: 24px,
+    transition: all 0.3s,
+    thickness: 3px,
+    space: 5px,
+    radius: 3px,
+    theme: (
+        default: $text-muted,
+        hover: $primary,
+        active: $primary
+    )
+) !default;
