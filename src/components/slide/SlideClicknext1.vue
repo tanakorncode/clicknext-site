@@ -42,10 +42,10 @@ export default {
         speed: 1000,
         mousewheel: false,
         grabCursor: true,
-        // autoplay: {
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         // Some Swiper option/callback...
       },
       slideItems: [
