@@ -15,9 +15,9 @@
       </b-row>
     </div>
 
-    <div data-aos="fade-up" class="container mt-3">
+    <div data-aos="fade-up" class="container mt-3 container-right">
       <b-row>
-        <b-col v-for="(item, key) in items" :key="key" md="3" sm="6" class="m-auto col-xs-6">
+        <b-col v-for="(item, key) in items" :key="key" lg="3" md="6" sm="6" class="m-auto col-xs-6">
           <div class="d-flex justify-content-between flex-grow-1 mb-3">
             <div class="bg-white partner-card mb-1 mb-md-0 rounded-lg box-shadow-custom">
               <div :class="$style.partnerNo" class="partner-no">
@@ -99,8 +99,8 @@ export default {
   .col-xs-6 {
     width: 50% !important;
   }
-}
-.col-xs-6 {
-  width: 50% !important;
+  .container-right {
+    padding-top: 30px;
+  }
 }
 </style>
