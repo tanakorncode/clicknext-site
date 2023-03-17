@@ -76,12 +76,24 @@ export default {
 .client-text.line-height-1 {
   line-height: 1;
 }
+@media (max-width: 992px) {
+  .customer-card {
+    width: 200px;
+    height: 100px;
+  }
+  .customer-no {
+    font-size: 2rem;
+  }
+  .customer-title {
+    font-size: 10px;
+  }
+}
 @media (max-width: 767px) {
   .customer-client {
     padding-top: 20px;
   }
   .customer-no {
-    font-size: 2.3rem;
+    font-size: 1.5rem;
   }
   .customer-title {
     font-size: 10px;
@@ -97,6 +109,10 @@ export default {
 @media (min-width: 992px) and (max-width: 1199px) {
   .customer-no {
     font-size: 2.5rem;
+  }
+  .customer-card {
+    width: 200px;
+    height: 100px;
   }
 }
 </style>
