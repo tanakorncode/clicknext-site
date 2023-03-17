@@ -9,7 +9,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css);
 @import "assets/css/grid-xs.css";
 @import "assets/css/animated-icon.css";
-@import "assets/plugins/keenthemes-icons/font/ki.css";
+@import "assets/plugins/icons/font/ki.css";
 @import "~@/assets/scss/vendors/bootstrap-vue/index";
 @import "assets/sass/style.vue";
 @import "aos/dist/aos.css";
