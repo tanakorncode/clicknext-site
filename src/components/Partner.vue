@@ -96,8 +96,11 @@ export default {
     width: 200px;
     height: 100px;
   }
+  .col-xs-6 {
+    width: 50% !important;
+  }
 }
 .col-xs-6 {
-    width: 50% !important;
+  width: 50% !important;
 }
 </style>

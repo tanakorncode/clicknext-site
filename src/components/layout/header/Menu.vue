@@ -442,46 +442,22 @@
         <span class="menu-text"> CAREER </span>
         <i class="menu-arrow"></i>
       </a>
-      <div class="menu-submenu menu-submenu-classic">
+      <div class="menu-submenu menu-submenu-classic" data-hor-direction="menu-submenu-left">
         <span class="m-menu__arrow" style="left: 50.5px"></span>
-        <div class="menu-subnav megamenu">
-          <ul class="menu-content">
-            <li class="menu-item">
-              <!-- <h3 class="menu-heading menu-toggle">
-                <i class="menu-bullet menu-bullet-dot"><span></span></i>
-                <span class="menu-text"> Header </span>
-                <i class="menu-arrow"></i>
-              </h3> -->
-              <ul class="menu-inner">
-                <router-link to="/404" v-slot="{ href, navigate, isActive, isExactActive }">
-                  <li
-                    aria-haspopup="true"
-                    class="menu-item"
-                    :class="[isActive && 'menu-item-active', isExactActive && 'menu-item-active']"
-                  >
-                    <a :href="href" class="menu-link" @click="navigate">
-                      <i class="menu-bullet menu-bullet-dot"><span></span></i>
-                      <span class="menu-text"> Full-time Jobs </span>
-                    </a>
-                  </li>
-                </router-link>
-
-                <router-link to="/404" v-slot="{ href, navigate, isActive, isExactActive }">
-                  <li
-                    aria-haspopup="true"
-                    class="menu-item"
-                    :class="[isActive && 'menu-item-active', isExactActive && 'menu-item-active']"
-                  >
-                    <a :href="href" class="menu-link" @click="navigate">
-                      <i class="menu-bullet menu-bullet-dot"><span></span></i>
-                      <span class="menu-text"> Internship </span>
-                    </a>
-                  </li>
-                </router-link>
-              </ul>
-            </li>
-          </ul>
-        </div>
+        <ul class="menu-subnav">
+          <li aria-haspopup="true" data-menu-toggle="hover" class="menu-item menu-item-submenu">
+            <a href="#" class="menu-link menu-toggle">
+              <i class="menu-bullet menu-bullet-dot"><span></span></i>
+              <span class="menu-text"> Full-time Jobs </span>
+            </a>
+          </li>
+          <li aria-haspopup="true" data-menu-toggle="hover" class="menu-item menu-item-submenu">
+            <a href="#" class="menu-link menu-toggle">
+              <i class="menu-bullet menu-bullet-dot"><span></span></i>
+              <span class="menu-text"> Internship </span>
+            </a>
+          </li>
+        </ul>
       </div>
     </li>
 
@@ -495,46 +471,22 @@
         <span class="menu-text"> COMPANY </span>
         <i class="menu-arrow"></i>
       </a>
-      <div class="menu-submenu menu-submenu-classic">
+      <div class="menu-submenu menu-submenu-classic" data-hor-direction="menu-submenu-left">
         <span class="m-menu__arrow" style="left: 50.5px"></span>
-        <div class="menu-subnav megamenu">
-          <ul class="menu-content">
-            <li class="menu-item">
-              <!-- <h3 class="menu-heading menu-toggle">
-                <i class="menu-bullet menu-bullet-dot"><span></span></i>
-                <span class="menu-text"> Header </span>
-                <i class="menu-arrow"></i>
-              </h3> -->
-              <ul class="menu-inner">
-                <router-link to="/404" v-slot="{ href, navigate, isActive, isExactActive }">
-                  <li
-                    aria-haspopup="true"
-                    class="menu-item"
-                    :class="[isActive && 'menu-item-active', isExactActive && 'menu-item-active']"
-                  >
-                    <a :href="href" class="menu-link" @click="navigate">
-                      <i class="menu-bullet menu-bullet-dot"><span></span></i>
-                      <span class="menu-text"> ABOUT US </span>
-                    </a>
-                  </li>
-                </router-link>
-
-                <router-link to="/404" v-slot="{ href, navigate, isActive, isExactActive }">
-                  <li
-                    aria-haspopup="true"
-                    class="menu-item"
-                    :class="[isActive && 'menu-item-active', isExactActive && 'menu-item-active']"
-                  >
-                    <a :href="href" class="menu-link" @click="navigate">
-                      <i class="menu-bullet menu-bullet-dot"><span></span></i>
-                      <span class="menu-text"> CONTACT </span>
-                    </a>
-                  </li>
-                </router-link>
-              </ul>
-            </li>
-          </ul>
-        </div>
+        <ul class="menu-subnav">
+          <li aria-haspopup="true" data-menu-toggle="hover" class="menu-item menu-item-submenu">
+            <a href="#" class="menu-link menu-toggle">
+              <i class="menu-bullet menu-bullet-dot"><span></span></i>
+              <span class="menu-text"> ABOUT US </span>
+            </a>
+          </li>
+          <li aria-haspopup="true" data-menu-toggle="hover" class="menu-item menu-item-submenu">
+            <a href="#" class="menu-link menu-toggle">
+              <i class="menu-bullet menu-bullet-dot"><span></span></i>
+              <span class="menu-text"> CONTACT </span>
+            </a>
+          </li>
+        </ul>
       </div>
     </li>
   </ul>
