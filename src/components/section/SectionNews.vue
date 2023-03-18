@@ -4,12 +4,12 @@
       <div class="mt-5">
         <b-row>
           <b-col lg="12" md="12" sm="12">
-            <Heading title="ข่าวสาร และบทความ ClickNext" class="text-center" />
+            <Heading title="ข่าวสาร และบทความ ClickNext" class="text-center" data-aos="fade-up" />
           </b-col>
         </b-row>
         <b-row>
           <b-col v-for="(item, key) in news" :key="key" lg="4" md="4" sm="12">
-            <div class="cn-card card-type-2 radius-small">
+            <div data-aos="fade-up" class="cn-card card-type-2 radius-small">
               <div class="inner">
                 <div class="thumbnail">
                   <a :href="item.url">
@@ -77,21 +77,21 @@ export default {
           postBy: "User Name",
           details: "ยกระดับการป้องกันภัยคุกคามทางไซเบอร์ในโรงพยาบาล ด้วย AI และ Automation",
           thumbnail: "https://placehold.co/400x225?text=News",
-          url: "#",
+          url: "javascript:void(0);",
           date: "18 มี.ค. 65",
         },
         {
           postBy: "User Name",
           details: "ยกระดับการป้องกันภัยคุกคามทางไซเบอร์ในโรงพยาบาล ด้วย AI และ Automation",
           thumbnail: "https://placehold.co/400x225?text=News",
-          url: "#",
+          url: "javascript:void(0);",
           date: "18 มี.ค. 65",
         },
         {
           postBy: "User Name",
           details: "ยกระดับการป้องกันภัยคุกคามทางไซเบอร์ในโรงพยาบาล ด้วย AI และ Automation",
           thumbnail: "https://placehold.co/400x225?text=News",
-          url: "#",
+          url: "javascript:void(0);",
           date: "18 มี.ค. 65",
         },
       ],
@@ -106,6 +106,8 @@ export default {
 }
 .cn-card {
   overflow: hidden;
+  box-shadow: 0px 1px 2px rgba(3, 18, 26, 0.2);
+  border-radius: 0.5rem;
 }
 .cn-card .thumbnail {
   position: relative;
@@ -246,5 +248,10 @@ export default {
 .cn-card.card-type-2:hover {
   background-color: #fff;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06);
+}
+@media (max-width: 767px) {
+  .cn-card {
+    margin-bottom: 20px;
+  }
 }
 </style>

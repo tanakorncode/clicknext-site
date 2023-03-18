@@ -3,7 +3,7 @@
     <b-container>
       <div class="mt-5 section-location">
         <div class="mb-4">
-          <Heading title="LOCATIONS" class="text-center" />
+          <Heading title="LOCATIONS" class="text-center" data-aos="fade-up" />
         </div>
         <b-row data-aos="fade-up">
           <b-col lg="4" md="4" sm="4">

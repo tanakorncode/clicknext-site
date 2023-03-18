@@ -4,9 +4,9 @@
       <div :class="$style.reward" class="mt-5">
         <div class="marquee-left">
           <div class="row">
-            <div v-for="(item, key) in items" :key="key" class="col-md-3 col-lg-3">
+            <div v-for="(item, key) in items" :key="key" class="col-md-3 col-lg-3 reward-img-box">
               <div>
-                <b-img class="img-responsive m-auto reward-img" :src="item.src"></b-img>
+                <img class="img-responsive m-auto reward-img" v-lazy="item.src" :src="item.src" />
               </div>
             </div>
           </div>
@@ -54,6 +54,35 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    // window.addEventListener("resize", function () {
+    //   if (window.ClicknextUtil.isMobileDevice()) {
+    //     const elements = document.querySelectorAll(".reward-img-box");
+    //     elements.forEach((v, k) => {
+    //       if (!window.ClicknextUtil.hasAttr(v, "data-aos")) {
+    //         v.setAttribute("data-aos", "fade-up");
+    //       }
+    //     });
+    //   } else {
+    //     const elements = document.querySelectorAll(".reward-img-box");
+    //     elements.forEach((v, k) => {
+    //       if (window.ClicknextUtil.hasAttr(v, "data-aos")) {
+    //         v.removeAttribute("data-aos");
+    //       }
+    //     });
+    //   }
+    // });
+    this.$nextTick(function () {
+      if (window.ClicknextUtil.isMobileDevice()) {
+        const elements = document.querySelectorAll(".reward-img-box");
+        elements.forEach((v, k) => {
+          if (!window.ClicknextUtil.hasAttr(v, "data-aos")) {
+            v.setAttribute("data-aos", "fade-up");
+          }
+        });
+      }
+    });
   },
 };
 </script>

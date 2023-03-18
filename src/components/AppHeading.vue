@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-black font-weight-bold text-left heading-tilte" data-aos="fade-right">
+  <h1 class="text-black font-weight-bold text-left heading-tilte">
     {{ title }}
   </h1>
 </template>

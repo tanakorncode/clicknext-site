@@ -7,8 +7,18 @@
       <div class="d-flex align-items-stretch mr-3 w-100">
         <div class="header-logo flex-grow-1">
           <router-link to="/">
-            <img alt="Logo" :src="layoutConfig('self.logo.sticky')" class="logo-default max-h-72px" />
-            <img alt="Logo" :src="layoutConfig('self.logo.sticky')" class="logo-sticky max-h-72px" />
+            <img
+              alt="Logo"
+              v-lazy="layoutConfig('self.logo.sticky')"
+              :src="layoutConfig('self.logo.sticky')"
+              class="logo-default max-h-72px"
+            />
+            <img
+              alt="Logo"
+              v-lazy="layoutConfig('self.logo.sticky')"
+              :src="layoutConfig('self.logo.sticky')"
+              class="logo-sticky max-h-72px"
+            />
           </router-link>
         </div>
         <!-- begin:: Header Menu -->

@@ -9,7 +9,7 @@
                 <div class="inner w-100 cn-img-rallery--height-fluid">
                   <div class="thumbnail d-flex cn-img-rallery--height-fluid">
                     <a class="thumbnail-link" target="_blank" :href="item.href">
-                      <b-img :src="item.img" alt="Preview Images" class="img-responsive"></b-img>
+                      <b-img :src="item.img" alt="Preview Images" class="img-responsive" />
                     </a>
                     <div class="hover-action">
                       <a class="cn-btn" target="_blank" :href="item.href">

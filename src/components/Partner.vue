@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div data-aos="fade-up" class="container mt-3">
+    <div data-aos="fade-up" class="container mt-3 pb-4">
       <b-row>
         <b-col cols="12" sm="4" class="m-auto">
           <span class="text-muted2 font-weight-bold font-size-lg flex-grow-1 d-flex justify-content-start">
@@ -9,7 +9,7 @@
         </b-col>
         <b-col cols="12" sm="8" class="m-auto">
           <div>
-            <b-img class="img-responsive m-auto" :src="img"></b-img>
+            <img v-lazy="img" class="img-responsive m-auto" :src="img" />
           </div>
         </b-col>
       </b-row>

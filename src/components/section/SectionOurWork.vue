@@ -4,7 +4,7 @@
       <div class="mt-5">
         <b-row>
           <b-col lg="6" md="6" sm="12">
-            <Heading title="OUR WORK" />
+            <Heading title="OUR WORK" data-aos="fade-right" />
           </b-col>
           <b-col lg="6" md="6" sm="12">
             <div class="text-muted2 text-left desc" data-aos="fade-left">

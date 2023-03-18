@@ -121,13 +121,6 @@ var ClicknextUtil = function () {
       return out;
     },
 
-    isBreakpointDown: function (mode) {
-      var width = this.getViewPort().width;
-      var breakpoint = this.getBreakpoint(mode);
-
-      return (width < breakpoint);
-    },
-
     on: function (element, selector, event, handler) {
       if (!selector) {
         return;
@@ -802,6 +795,29 @@ var ClicknextUtil = function () {
         document.body.parentNode.scrollTop = value;
         document.body.scrollTop = value;
       }); //, easing, done
+    },
+
+    /**
+     * Checks whether current device is mobile touch.
+     * @returns {boolean}
+     */
+    isMobileDevice: function () {
+      let test = this.getViewPort().width < this.getBreakpoint('lg')
+
+      if (test === false) {
+        // For use within normal web clients
+        test = navigator.userAgent.match(/iPad/i) != null
+      }
+
+      return test
+    },
+
+    /**
+     * Checks whether current device is desktop.
+     * @returns {boolean}
+     */
+    isDesktopDevice: function () {
+      return !Util.isDesktopDevice()
     },
 
   }

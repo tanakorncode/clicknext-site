@@ -12,11 +12,12 @@
         <swiper-slide :key="key">
           <!-- shutters image must have "swiper-shutters-image" class, one image per slide -->
           <div class="slide-image">
-            <b-img
+            <img
+              v-lazy="item.img"
               alt="Image Preview"
               :src="item.img"
               class="swiper-shutters-image w-100 img-responsive transform-1"
-            ></b-img>
+            />
           </div>
           <!-- demo slide title -->
           <div class="swiper-slide-title" data-swiper-parallax="50%">&nbsp;</div>

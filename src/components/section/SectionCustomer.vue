@@ -5,16 +5,16 @@
         <b-row>
           <b-col cols="12" md="8" lg="8" sm="12">
             <div class="customer-logo m-auto w-100">
-              <b-img
-                class="img-responsive m-auto"
-                src="https://image.makewebeasy.net/makeweb/0/m14BHwk4P/Home/07__Logo.png?v=202012190947"
-              ></b-img>
+              <img v-lazy="imgUrl" class="img-responsive m-auto" />
             </div>
           </b-col>
           <b-col cols="12" md="4" lg="4" sm="12" class="m-auto">
             <div class="m-auto customer-client">
               <span class="text-center client-text"> CLIENT </span>
-              <span class="text-center client-text text-dark line-height-1"> SUCCESS </span>
+              <p class="m-0">
+                <span class="text-center client-text text-dark line-height-1"> SUCCESS </span>
+              </p>
+
               <p class="mt-4 mb-1">
                 <span class="text-center client-text-small text-muted2 pb-0"> ส่วนหนึ่ง จากลูกค้า ที่ไว้วางใจ </span>
               </p>
@@ -53,6 +53,11 @@
 <script>
 export default {
   name: "SectionCustomer",
+  data() {
+    return {
+      imgUrl: "https://image.makewebeasy.net/makeweb/0/m14BHwk4P/Home/07__Logo.png?v=202012190947",
+    };
+  },
 };
 </script>
 

@@ -4,6 +4,7 @@ import "./plugins/bootstrap-vue";
 import "./registerServiceWorker";
 import "./plugins/clicknext";
 import "./plugins/swiper";
+import "./plugins/vue-lazyload";
 
 import App from "./App.vue";
 import PerfectScrollbar from "perfect-scrollbar";

@@ -11,7 +11,12 @@
       <swiper-slide v-for="(item, key) in slideItems" :key="key">
         <!-- one image per slide -->
         <div class="slide-image">
-          <b-img alt="Image Preview" :src="item.img" class="swiper-shutters-image w-100 img-responsive"></b-img>
+          <b-img
+            v-lazy="item.img"
+            alt="Image Preview"
+            :src="item.img"
+            class="swiper-shutters-image w-100 img-responsive"
+          ></b-img>
         </div>
         <!-- slide title -->
         <div class="swiper-slide-title" data-swiper-parallax="50%">

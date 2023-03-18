@@ -31,7 +31,7 @@
     </div>
 
     <div @click="onScrollTop" id="backto-top" class="cn-backto-top cn-backto-top-active m-auto">
-      <i class="fas fa-chevron-up text-white"></i>
+      <i class="fas fa-chevron-up text-danger"></i>
     </div>
   </div>
 </template>

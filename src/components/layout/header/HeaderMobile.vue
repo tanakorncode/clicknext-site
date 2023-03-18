@@ -2,7 +2,7 @@
   <div id="cn_header_mobile" class="header-mobile align-items-center" v-bind:class="headerClasses">
     <!--begin::Logo-->
     <a href="/">
-      <img alt="Logo" :src="headerLogo" class="logo-default max-h-30px" />
+      <img v-lazy="headerLogo" alt="Logo" :src="headerLogo" class="logo-default max-h-30px" />
     </a>
     <!--end::Logo-->
     <!--begin::Toolbar-->
